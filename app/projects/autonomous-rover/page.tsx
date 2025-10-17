@@ -11,7 +11,7 @@ export default function RoverProject() {
         {/* Video Demo at the top */}
         <section className="pt-24 pb-8">
           <h1 className="text-4xl font-semibold tracking-tight mb-6">
-            Autonomous Baseball Rover
+            Junior Capstone Autonomous Baseball Retriever
           </h1>
           <div className="aspect-video mb-8">
             <iframe
@@ -34,10 +34,9 @@ export default function RoverProject() {
         <section className="mt-8 mb-12">
           <h2 className="text-xl font-semibold mb-3">Project Description</h2>
           <p className="text-lg text-zinc-600">
-            An autonomous rover system utilizing computer vision and PID control for precise navigation. The project showcases advanced surface-aware gain adjustments and centroiding approaches for robust performance. <br /><br />
-            <span className="block mt-2 text-base text-zinc-500">
-              (Add more details about your design, challenges, results, or future work here.)
-            </span>
+            An autonomous rover system developed as a senior capstone. It uses computer vision to centroid targets and a surface-aware PID controller to retrieve baseballs reliably across varied ground conditions.
+            <br /><br />
+            <span className="block mt-2 text-base text-zinc-500">Design notes: tuned PID gains for different surfaces, used color segmentation for robust centroiding, and implemented fail-safes for wheel slip detection.</span>
           </p>
         </section>
 

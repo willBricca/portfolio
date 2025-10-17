@@ -5,27 +5,26 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    name: "Fire-detecting Drone",
-    summary: "Wildfire scouting drone; controls + perception prototype.",
-    image: "/images/drone.jpg",
-    tags: ["Aerial Robotics", "Controls"],
-    href: "/projects/fire-detecting-drone",
-  },
-  {
-    name: "Project Worlds Fastest Running Shoe",
-    summary: "Air bladder pods replacing conventional foam; drop-testing; rapid-prototyping.",
+    name: "Osaka Research",
+    summary: "Experimental research collaboration based in Osaka — soft mechanisms and prototyping.",
     image: "/images/hypershoe.jpg",
-    tags: ["Soft Robotics", "FEA", "Python"],
+    tags: ["Research", "Soft Mechanisms", "Prototyping"],
     href: "/projects/hypershoe",
   },
   {
-    name: "Autonomous Baseball Rover",
-    summary: "Centroiding + PID approach; surface-aware gains.",
+    name: "Junior Capstone Autonomous Baseball Retriever",
+    summary: "Capstone project: vision-based centroiding and surface-aware PID to retrieve baseballs autonomously.",
     image: "/images/rover.png",
-    tags: ["Controls", "OpenCV", "PID"],
+    tags: ["Robotics", "Controls", "Computer Vision"],
     href: "/projects/autonomous-rover",
   },
-  // Add more as needed...
+  {
+    name: "FPV Drone",
+    summary: "First-person-view drone project focused on fast flight and FPV systems integration.",
+    image: "/images/drone.jpg",
+    tags: ["Aerial Robotics", "FPV", "Controls"],
+    href: "/projects/fire-detecting-drone",
+  },
 ];
 
 export default function Home() {
@@ -56,14 +55,13 @@ export default function Home() {
             <div className="flex flex-col justify-center">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">About</h2>
               <p className="mt-4 text-zinc-600 leading-relaxed">
-                I’m Dylan, a UCSB mechanical engineer focused on controls,
+                I’m Will Bricca, a UCSB mechanical engineer focused on controls,
                 autonomy, and soft systems. I like turning models into motion—fast:
-                derive, simulate, build, test, iterate. Recent work includes a
-                wildfire-mapping drone (controls + perception), high-return
-                variable-stiffness shoe pods (rigorous drop-test instrumentation),
-                and an autonomous rover (vision centroiding with surface-aware PID).
-                I care about clean interfaces, robust controllers, and shipping
-                hardware that actually works in the field.
+                derive, simulate, build, test, iterate. Recent work includes an
+                FPV drone (controls + perception), high-return variable-stiffness
+                shoe pods (rigorous drop-test instrumentation), and an autonomous
+                rover (vision centroiding with surface-aware PID). I care about
+                clean interfaces, robust controllers, and shipping hardware that actually works in the field.
               </p>
               <p className="mt-4 text-zinc-600">
                 Tooling I live in: Python/MATLAB for control + data, CAD/FEA for
@@ -79,8 +77,8 @@ export default function Home() {
             {/* Image */}
             <div className="relative">
               <Image
-                src="/images/dylan-portrait.jpg" // supply this asset
-                alt="Dylan — mechanical engineer"
+                src="/images/dylan-portrait.jpg" // portrait of Will Bricca
+                alt="Will Bricca — mechanical engineer"
                 width={1600}
                 height={2000}
                 priority

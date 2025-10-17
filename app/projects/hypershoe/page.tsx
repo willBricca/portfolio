@@ -9,7 +9,7 @@ export default function HypershoeProject() {
       <main className="pb-24">
         <section className="pt-24 pb-8">
           <h1 className="text-4xl font-semibold tracking-tight mb-6">
-            Hypershoe: Variable-Stiffness Pods
+            Osaka Research: Soft Mechanisms & Prototyping
           </h1>
           <div className="flex flex-wrap gap-2 mb-4">
             <Badge>Soft Robotics</Badge>
@@ -20,10 +20,9 @@ export default function HypershoeProject() {
         <section className="mt-8 mb-12">
           <h2 className="text-xl font-semibold mb-3">Project Description</h2>
           <p className="text-lg text-zinc-600">
-            &gt;80% energy return; drop-test rig; latex vs TPU. Explores soft robotics and material optimization for high-performance footwear. <br /><br />
-            <span className="block mt-2 text-base text-zinc-500">
-              (Add more details about your design, testing, results, or future work here.)
-            </span>
+            Experimental collaboration based in Osaka exploring soft mechanisms, air-bladder pods, and rapid prototyping. Work includes drop-testing, material comparisons, and iterative pod geometry optimization.
+            <br /><br />
+            <span className="block mt-2 text-base text-zinc-500">Notes: instrumented drop tests, material hysteresis analysis, and prototyping cycles with rapid iteration.</span>
           </p>
         </section>
         {/* Documentation */}
