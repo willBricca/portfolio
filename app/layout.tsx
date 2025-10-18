@@ -3,8 +3,8 @@ import "./globals.css";
 import "./section-animate.css";
 
 export const metadata: Metadata = {
-  title: "Dylan Kauffmann — Mechanical Engineering",
-  description: "Projects, publications, and contact.",
+  title: "Will Bricca - Mechanical Engineer",
+  description: "Projects, Experience, and Contact.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
