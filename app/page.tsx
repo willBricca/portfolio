@@ -73,9 +73,9 @@ export default function Home() {
               <p className="mt-4 text-zinc-600 leading-relaxed">
                 I’m Will Bricca, a UCSB mechanical engineer specializing in rapid prototyping, 
                 controls, and autonomous systems. At Dragon Q Energy, I move fast from concept 
-                to deployment—designing, building, and testing FPV drones and autonomous rovers
-                 that operate reliably in the field. My background includes research at Osaka 
-                 University in soft system design, and I’m currently leading development of a 
+                to deployment. I have experience designing, building, and testing FPV drones and 
+                autonomous rovers that operate reliably in the field. My background includes research at Osaka 
+                 University in soft system design, and I’m currently developing a 
                  fire-mapping drone for my senior capstone—an autonomous VTOL platform built for 
                  real-world wildfire surveillance.
               </p>
