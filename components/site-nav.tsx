@@ -11,10 +11,10 @@ export default function SiteNav() {
                       border-b border-zinc-200">
         {/* CONSTRAINED CONTENT */}
         <div className="mx-auto max-w-6xl px-6 h-14 flex items-center justify-between">
-          <Link href="/" className="font-semibold tracking-tight">DK</Link>
+          <Link href="/" className="font-semibold tracking-tight">WB</Link>
           <nav className="flex items-center gap-6 text-sm">
             <Link href="#projects">Projects</Link>
-            <Link href="#publications">Publications</Link>
+            <Link href="#research">Experience</Link>
             <Link href="#about">About</Link>
             <Button asChild size="sm"><Link href="#contact">Contact</Link></Button>
           </nav>

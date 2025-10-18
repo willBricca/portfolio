@@ -6,23 +6,26 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     name: "Osaka Research",
-    summary: "Experimental research collaboration based in Osaka — soft mechanisms and prototyping.",
-    image: "/images/hypershoe.jpg",
-    tags: ["Research", "Soft Mechanisms", "Prototyping"],
-    href: "/projects/hypershoe",
+    summary:
+      "Experimental research collaboration based in Osaka — soft mechanisms and prototyping.",
+    image: "/images/osaka-image.jpg",
+    tags: ["Design", "FEA", "Prototyping"],
+    href: "/projects/osaka-research",
   },
   {
     name: "Junior Capstone Autonomous Baseball Retriever",
-    summary: "Capstone project: vision-based centroiding and surface-aware PID to retrieve baseballs autonomously.",
+    summary:
+      "Capstone project: vision-based centroiding and surface-aware PID to retrieve baseballs autonomously.",
     image: "/images/rover.png",
-    tags: ["Robotics", "Controls", "Computer Vision"],
+    tags: ["Controls", "Computer Vision", "MATLAB"],
     href: "/projects/autonomous-rover",
   },
   {
     name: "FPV Drone",
-    summary: "First-person-view drone project focused on fast flight and FPV systems integration.",
+    summary:
+      "First-person-view drone project focused on fast flight and FPV systems integration.",
     image: "/images/drone.jpg",
-    tags: ["Aerial Robotics", "FPV", "Controls"],
+    tags: ["Aerial Robotics", "Controls", "Design"],
     href: "/projects/fire-detecting-drone",
   },
 ];
@@ -31,53 +34,69 @@ export default function Home() {
   return (
     <>
       <SiteNav />
-  <main>
-        {/* ========== HERO (kept) ========== */}
-  <section className="min-h-screen flex items-center pb-24 pt-24 section-animate">
+      <main>
+        {/* ========== HERO ========== */}
+        <section className="min-h-screen flex items-center pb-24 pt-24 section-animate">
           <div className="w-full">
             <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
-              Mechanical engineer building{" "}
-              <span className="text-zinc-500">control-driven</span> systems that ship.
+              Designing robust systems from first principles.
             </h1>
             <p className="mt-6 text-lg text-zinc-600 max-w-2xl">
-              Robotics, soft mechanisms, vehicle dynamics. Python/MATLAB, CAD, controls.
+              Emphasis on <span className="font-medium">Design</span>,{" "}
+              <span className="font-medium">SolidWorks</span>,{" "}
+              <span className="font-medium">MATLAB</span>, and{" "}
+              <span className="font-medium">FEA</span>. Controls, robotics,
+              vehicle dynamics — turning models into motion.
             </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              <Badge>Design</Badge>
+              <Badge>SolidWorks</Badge>
+              <Badge>MATLAB</Badge>
+              <Badge>FEA</Badge>
+              <Badge>Controls</Badge>
+              <Badge>Prototyping</Badge>
+            </div>
             <div className="mt-8 flex gap-3">
-              <a href="/cv.pdf" className="underline underline-offset-4">Download CV</a>
+              <a href="/cv.pdf" className="underline underline-offset-4">
+                Download CV
+              </a>
             </div>
           </div>
         </section>
 
         {/* ========== ABOUT (text left, image right) ========== */}
-  <section id="about" className="min-h-screen flex items-center section-animate">
+        <section id="about" className="min-h-screen flex items-center section-animate">
           <div className="grid md:grid-cols-2 gap-10 w-full">
             {/* Text */}
             <div className="flex flex-col justify-center">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">About</h2>
               <p className="mt-4 text-zinc-600 leading-relaxed">
-                I’m Will Bricca, a UCSB mechanical engineer focused on controls,
-                autonomy, and soft systems. I like turning models into motion—fast:
-                derive, simulate, build, test, iterate. Recent work includes an
-                FPV drone (controls + perception), high-return variable-stiffness
-                shoe pods (rigorous drop-test instrumentation), and an autonomous
-                rover (vision centroiding with surface-aware PID). I care about
-                clean interfaces, robust controllers, and shipping hardware that actually works in the field.
+                I’m Will Bricca, a UCSB mechanical engineer focused on design,
+                controls, autonomy, and soft systems. I move fast across the full
+                loop: derive, simulate, build, test, iterate. Recent work includes
+                an FPV drone (controls + perception), variable-stiffness shoe pods
+                (instrumented drop tests), and an autonomous rover (vision
+                centroiding with surface-aware PID). I care about clean interfaces,
+                robust controllers, and shipping hardware that works in the field.
               </p>
               <p className="mt-4 text-zinc-600">
-                Tooling I live in: Python/MATLAB for control + data, CAD/FEA for
+                Tooling: MATLAB/Python for control + data, SolidWorks + FEA for
                 structure, OpenCV for perception, and plenty of bench-top fixtures
-                to make the numbers honest.
+                to keep the numbers honest.
               </p>
               <div className="mt-6">
-                <a className="underline underline-offset-4" href="mailto:dkauffmann@ucsb.edu">
-                  dkauffmann@ucsb.edu
+                <a
+                  className="underline underline-offset-4"
+                  href="mailto:briccawill@gmail.com"
+                >
+                  briccawill@gmail.com
                 </a>
               </div>
             </div>
             {/* Image */}
             <div className="relative">
               <Image
-                src="/images/dylan-portrait.jpg" // portrait of Will Bricca
+                src="/images/will-portrait.jpg"
                 alt="Will Bricca — mechanical engineer"
                 width={1600}
                 height={2000}
@@ -88,8 +107,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ========== PROJECTS (full swipe down) ========== */}
-  <section id="projects" className="min-h-screen flex items-center section-animate">
+        {/* ========== PROJECTS ========== */}
+        <section id="projects" className="min-h-screen flex items-center section-animate">
           <div className="w-full">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Projects</h2>
             <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -98,13 +117,17 @@ export default function Home() {
                   <CardHeader className="space-y-2">
                     <h3 className="text-xl font-semibold">
                       {p.href ? (
-                        <a href={p.href} className="underline hover:no-underline">{p.name}</a>
+                        <a href={p.href} className="underline hover:no-underline">
+                          {p.name}
+                        </a>
                       ) : (
                         p.name
                       )}
                     </h3>
                     <div className="flex flex-wrap gap-2">
-                      {(p.tags ?? []).map((t) => <Badge key={t}>{t}</Badge>)}
+                      {(p.tags ?? []).map((t) => (
+                        <Badge key={t}>{t}</Badge>
+                      ))}
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-3">
@@ -125,22 +148,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ========== PUBLICATIONS (optional extra section) ========== */}
-  <section id="publications" className="min-h-screen flex items-center section-animate">
-          <div className="w-full">
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Publications & Reports</h2>
-            <ul className="mt-4 list-disc pl-5 text-zinc-700 space-y-2">
-              <li><a className="underline" href="/pdfs/hypershoe-report.pdf">Energy Return in Air-Bladder Pods (PDF)</a></li>
-              <li><a className="underline" href="/pdfs/tokenization-thesis.pdf">Swiss Real-Estate Tokenization (PDF)</a></li>
-            </ul>
-          </div>
-        </section>
-
-        {/* ========== CONTACT (footer-style) ========== */}
-  <section id="contact" className="py-20 section-animate">
+        {/* ========== CONTACT ========== */}
+        <section id="contact" className="py-20 section-animate">
           <h2 className="text-3xl font-semibold tracking-tight">Contact</h2>
           <p className="mt-4 text-zinc-600">
-            Email: <a className="underline" href="mailto:dkauffmann@ucsb.edu">dkauffmann@ucsb.edu</a>
+            Email:{" "}
+            <a className="underline" href="mailto:briccawill@gmail.com">
+              briccawill@gmail.com
+            </a>
           </p>
         </section>
       </main>
