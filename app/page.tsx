@@ -39,7 +39,7 @@ export default function Home() {
         <section className="min-h-screen flex items-center pb-24 pt-24 section-animate">
           <div className="w-full">
             <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
-              Designing robust systems from first principles.
+              Creating robust systems from first principles.
             </h1>
             <p className="mt-6 text-lg text-zinc-600 max-w-2xl">
               Emphasis on <span className="font-medium">Design</span>,{" "}
@@ -71,18 +71,18 @@ export default function Home() {
             <div className="flex flex-col justify-center">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">About</h2>
               <p className="mt-4 text-zinc-600 leading-relaxed">
-                I’m Will Bricca, a UCSB mechanical engineer focused on design,
-                controls, autonomy, and soft systems. I move fast across the full
-                loop: derive, simulate, build, test, iterate. Recent work includes
-                an FPV drone (controls + perception), variable-stiffness shoe pods
-                (instrumented drop tests), and an autonomous rover (vision
-                centroiding with surface-aware PID). I care about clean interfaces,
-                robust controllers, and shipping hardware that works in the field.
+                I’m Will Bricca, a UCSB mechanical engineer specializing in rapid prototyping, 
+                controls, and autonomous systems. At Dragon Q Energy, I move fast from concept 
+                to deployment—designing, building, and testing FPV drones and autonomous rovers
+                 that operate reliably in the field. My background includes research at Osaka 
+                 University in soft system design, and I’m currently leading development of a 
+                 fire-mapping drone for my senior capstone—an autonomous VTOL platform built for 
+                 real-world wildfire surveillance.
               </p>
               <p className="mt-4 text-zinc-600">
-                Tooling: MATLAB/Python for control + data, SolidWorks + FEA for
-                structure, OpenCV for perception, and plenty of bench-top fixtures
-                to keep the numbers honest.
+                Tooling: SolidWorks for design, MATLAB for analysis, and core design principles 
+                for rapid prototyping. Comfortable with hands-on fabrication—building with power 
+                tools, wiring, and testing hardware with mills, soldering irons, and multimeters.
               </p>
               <div className="mt-6">
                 <a
